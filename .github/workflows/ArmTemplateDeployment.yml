@@ -15,4 +15,4 @@ jobs:
       - name: Azure login
         uses: Azure/Actions/login@v1
         with:
-          creds: ${{secrets.AZURE_CREDENTIALS}}
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
