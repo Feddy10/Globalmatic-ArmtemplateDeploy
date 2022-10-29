@@ -1,10 +1,10 @@
-name: List RGs
+name: List Account
 
 on:
   workflow_dispatch:
 
 jobs:
-  rgDeploy: 
+  accountDeploy: 
     runs-on: windows-latest
 
     steps:
