@@ -1,0 +1,33 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "Location": {
+            "type": "string",
+            "metadata": {
+                "description": "Enter the location to deploy the resource to"
+            },
+            "defaultValue" : "UK West"
+        },
+        "resourceGroupName": {
+            "type": "string",
+            "metadata": {
+                "description": "Enter the name of the resourceGroup"
+            },
+            "defaultValue" : "rg-GithubActions"
+        }
+    },
+    "functions": [],
+    "variables": {},
+    "resources": [
+        {
+            "name": "[parameters('resourceGroupName')]",
+            "type": "Microsoft.Resources/resourceGroups",
+            "apiVersion": "2021-05-01",
+            "location": "[parameters('Location')]",
+            "dependsOn": [],
+            "tags": {}
+        }
+    ],
+    "outputs": {}
+}
