@@ -23,5 +23,11 @@ jobs:
       - name: Deploy ResourceGroup rg-GithubActions with Az Cli
         uses: Azure/cli@v1
         with:
+<<<<<<< HEAD
           inlineScript: |
             az deployment sub create --location "UK West" --template-file ./arm-template/resourceGroup.json
+=======
+          inlinescript: |
+            az deployment sub create --location "UK West" --template-file ./arm-templates/resourcegroup.json
+
+>>>>>>> d76bd59fd4b6996ea352d965e7b63d11a9910cd6
